@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/* текст в одну строку с троеточием в конце */
+.navbar-inverse {
+  border-color: transparent;
+  background-color: #181818; }
+  .navbar-inverse .navbar-nav > .active > a {
+    border-radius: 4px;
+    background-color: #346270;
+    color: #fff; }
+  .navbar-inverse .navbar-nav li {
+    margin: 5px 3px 5px 0; }
+    .navbar-inverse .navbar-nav li > a:hover {
+      border-radius: 4px;
+      background-color: rgba(52, 98, 112, 0.3); }
+  .navbar-inverse .navbar-nav.navbar-right li {
+    margin: 5px 0 5px 3px; }
+
+html {
+  overflow-y: scroll; }
+
+.page-header {
+  margin: 0;
+  padding-bottom: 0;
+  border-bottom: none; }
+
+.header-logo {
+  padding: 100px 20px;
+  background-color: #222222;
+  background-image: url("../img/header-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  text-align: center; }
+
+.header-logo__title {
+  display: block;
+  color: #df8a13;
+  text-shadow: 0 0 5px #000000, 0 0 20px #000000;
+  letter-spacing: 12px;
+  font-weight: bold;
+  font-size: 48px; }
+
+.header-logo__description {
+  display: block;
+  padding-left: 2px;
+  color: #eeeeee;
+  text-shadow: 0 0 5px #000000, 0 0 20px #000000;
+  letter-spacing: 5px;
+  font-size: 16px; }
+
+/*# sourceMappingURL=style.css.map */

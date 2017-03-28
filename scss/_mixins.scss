@@ -1,0 +1,7 @@
+/* текст в одну строку с троеточием в конце */
+@mixin text-shortener {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
