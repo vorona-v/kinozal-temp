@@ -21,8 +21,12 @@
   .navbar-nav {
     > .active > a {
       border-radius: 4px;
-      background-color: #346270;
-      color: #fff;
+      background-color: $main-color;
+      color: #ffffff;
+
+      &:hover {
+        background-color: $main-lighten;
+      }
     }
 
     li {
@@ -30,7 +34,7 @@
 
       > a:hover {
         border-radius: 4px;
-        background-color: rgba(52, 98, 112, 0.3);
+        background-color: $main-lighten;
       }
     }
 
@@ -40,3 +44,32 @@
   }
 }
 
+.panel {
+  margin-bottom: 30px;
+  border: none;
+  background-color: #f8f8f8;
+}
+
+.panel-info {
+  > .panel-heading {
+    border: none;
+    background-color: $base-color;
+    color: #ffffff;
+  }
+}
+
+.panel-body {
+  border: 1px solid #dddddd;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.panel-title {
+  letter-spacing: 2px;
+  font-size: 1.2em;
+}
+
+.input-lg {
+  border-radius: 0;
+  font-size: 14px;
+}

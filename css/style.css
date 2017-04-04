@@ -1,22 +1,78 @@
 @charset "UTF-8";
-/* текст в одну строку с троеточием в конце */
+/* colors palette
+ * http://paletton.com/#uid=70K0u0kthr+iszgnpu9uQmjB5hk
+ */
+/*
+обоснование оформления:
+когда кастомизируем стандартные селекторы bootstrap,
+когда создаем собственные классы:
+-- если компонент уникален и мы меняем его вид
+в каком-то конкретном месте шаблона,
+то мы используем собственный класс,
+например, .header-logo
+-- если мы меняем вид стандартного кода,
+который может быть использован в измененном виде
+в любой другой части сайта,
+то меняем вид стандартных селекторов,
+например, меню, кнопки меню и их поведение
+*/
 .navbar-inverse {
   border-color: transparent;
   background-color: #181818; }
   .navbar-inverse .navbar-nav > .active > a {
     border-radius: 4px;
-    background-color: #346270;
-    color: #fff; }
+    background-color: #165690;
+    color: #ffffff; }
+    .navbar-inverse .navbar-nav > .active > a:hover {
+      background-color: #5182ae; }
   .navbar-inverse .navbar-nav li {
     margin: 5px 3px 5px 0; }
     .navbar-inverse .navbar-nav li > a:hover {
       border-radius: 4px;
-      background-color: rgba(52, 98, 112, 0.3); }
+      background-color: #5182ae; }
   .navbar-inverse .navbar-nav.navbar-right li {
     margin: 5px 0 5px 3px; }
 
+.panel {
+  margin-bottom: 30px;
+  border: none;
+  background-color: #f8f8f8; }
+
+.panel-info > .panel-heading {
+  border: none;
+  background-color: #df8a13;
+  color: #ffffff; }
+
+.panel-body {
+  border: 1px solid #dddddd;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px; }
+
+.panel-title {
+  letter-spacing: 2px;
+  font-size: 1.2em; }
+
+.input-lg {
+  border-radius: 0;
+  font-size: 14px; }
+
 html {
   overflow-y: scroll; }
+
+a {
+  color: #165690; }
+  a:hover, a:focus {
+    color: #df8a13;
+    text-decoration: none; }
+
+.clearfix {
+  clear: both; }
+
+.margin-bottom-50 {
+  margin-bottom: 50px; }
+
+.margin-bottom-20 {
+  margin-bottom: 20px; }
 
 .page-header {
   margin: 0;
@@ -46,5 +102,159 @@ html {
   text-shadow: 0 0 5px #000000, 0 0 20px #000000;
   letter-spacing: 5px;
   font-size: 16px; }
+
+section {
+  position: relative;
+  overflow: hidden; }
+  section > h1 {
+    margin-bottom: 40px; }
+  section > h2 {
+    margin: 50px 0 40px 40px; }
+    section > h2::after {
+      position: absolute;
+      margin: 20px 0 0 15px;
+      width: 100%;
+      border-bottom: 3px solid rgba(240, 173, 78, 0.7);
+      content: ""; }
+    section > h2::before {
+      position: absolute;
+      left: 0;
+      margin: 20px 0 0 0;
+      width: 25px;
+      border-bottom: 3px solid rgba(240, 173, 78, 0.9);
+      content: ""; }
+
+.new-films-item:hover .new-films-item__label,
+.top-week-item:hover .top-week-item__label {
+  color: #ffffff; }
+
+.new-films-item:hover .thumbnail,
+.top-week-item:hover .thumbnail {
+  border-color: #df8a13;
+  background-color: #df8a13; }
+
+.new-films-item .new-films-item__label,
+.top-week-item .new-films-item__label, .new-films-item
+.top-week-item__label,
+.top-week-item
+.top-week-item__label {
+  color: #165690;
+  transition: color 0.25s ease; }
+
+.new-films-item__image,
+.top-week-item__image {
+  width: 100%; }
+
+.new-films-item .thumbnail,
+.top-week-item .thumbnail {
+  transition: background-color 0.25s ease; }
+
+.new-films-item .caption,
+.top-week-item .caption {
+  text-align: center; }
+
+.film-news img {
+  width: 100%; }
+
+.film-news-item:hover .thumbnail {
+  background-color: #f0ad4e; }
+
+.film-news-item:hover h3 > a {
+  color: #df8a13; }
+
+.film-news-item:hover .btn-warning {
+  background-color: #df8a13; }
+
+.film-news-item__text {
+  text-align: justify; }
+
+.film-news h3 > a {
+  transition: color 0.25s ease; }
+
+.film-news .thumbnail {
+  transition: background-color 0.25s ease; }
+
+.film-news .btn-warning {
+  float: right;
+  margin-bottom: 30px;
+  transition: background-color 0.25s ease; }
+
+/* bootstrap vertical carousel */
+.vertical-slider {
+  overflow: hidden;
+  border-radius: 4px; }
+  .vertical-slider img {
+    width: 100%; }
+
+/* site news */
+.site-news-item:not(:last-child) {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #dddddd; }
+
+.site-news-item:hover .site-news-item__title a {
+  color: #df8a13; }
+
+.site-news-item:hover .site-news-item__image {
+  border-color: #df8a13;
+  background-color: #df8a13; }
+
+.site-news-item__image {
+  float: left;
+  margin: 0 10px 10px 0;
+  width: 75px;
+  transition: background-color 0.25s ease; }
+  .site-news-item__image img {
+    width: 100%; }
+
+.site-news-item__date {
+  color: #aaaaaa;
+  text-align: right;
+  font-size: 0.8em; }
+
+.site-news-item__title a {
+  color: #165690;
+  transition: color 0.25s ease; }
+
+.top-films .panel-body {
+  padding-right: 0;
+  padding-left: 0; }
+
+.top-films .list-group {
+  margin-bottom: 0; }
+
+.top-films-item {
+  border-top: 1px solid #dddddd;
+  border-right: none;
+  border-left: none;
+  background-color: transparent; }
+  .top-films-item:first-child {
+    border-top: none;
+    border-radius: 0; }
+  .top-films-item:last-child {
+    border-bottom: none;
+    border-radius: 0; }
+  .top-films-item:hover {
+    background-color: #df8a13; }
+    .top-films-item:hover a {
+      color: #ffffff; }
+    .top-films-item:hover .badge {
+      background-color: #333333; }
+
+.page-footer {
+  background-color: #222222;
+  color: #eeeeee; }
+  .page-footer ul {
+    padding: 0;
+    list-style: none; }
+  .page-footer a {
+    color: #777777; }
+    .page-footer a:hover {
+      color: #ffffff; }
+
+.footer-fifth {
+  margin: 20px 0;
+  text-align: center; }
+  .footer-fifth a {
+    color: #eeeeee; }
 
 /*# sourceMappingURL=style.css.map */

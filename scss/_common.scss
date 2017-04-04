@@ -2,3 +2,25 @@
 html {
   overflow-y: scroll;
 }
+
+a {
+  color: $main-color;
+
+  &:hover,
+  &:focus {
+    color: $base-color;
+    text-decoration: none;
+  }
+}
+
+.clearfix {
+  clear: both;
+}
+
+.margin-bottom-50 {
+  margin-bottom: 50px;
+}
+
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
