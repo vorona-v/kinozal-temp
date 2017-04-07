@@ -145,6 +145,13 @@ section {
 .top-week-item__image {
   width: 100%; }
 
+.new-films-item__label,
+.top-week-item__label {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
 .new-films-item .thumbnail,
 .top-week-item .thumbnail {
   transition: background-color 0.25s ease; }

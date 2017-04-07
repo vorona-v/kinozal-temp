@@ -52,6 +52,10 @@ section {
     width: 100%;
   }
 
+  &__label {
+    @include text-shortener;
+  }
+
   .thumbnail {
     transition: background-color 0.25s ease;
   }
