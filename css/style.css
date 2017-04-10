@@ -1,7 +1,5 @@
 @charset "UTF-8";
-/* colors palette
- * http://paletton.com/#uid=70K0u0kthr+iszgnpu9uQmjB5hk
- */
+/* colors palette http://paletton.com/#uid=70K0u0kthr+iszgnpu9uQmjB5hk */
 /*
 обоснование оформления:
 когда кастомизируем стандартные селекторы bootstrap,
@@ -55,6 +53,10 @@
 .input-lg {
   border-radius: 0;
   font-size: 14px; }
+
+.well {
+  border-color: #dddddd;
+  background-color: #f8f8f8; }
 
 html {
   overflow-y: scroll; }
@@ -185,6 +187,19 @@ section {
   float: right;
   margin-bottom: 30px;
   transition: background-color 0.25s ease; }
+
+.film-info {
+  font-size: 1.2em; }
+  .film-info__badge {
+    font-size: 0.8em; }
+    .film-info__badge:not(:last-child) {
+      margin-right: 3%; }
+  .film-info__well {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; }
+
+.film-send-comment .btn {
+  float: right; }
 
 /* bootstrap vertical carousel */
 .vertical-slider {
