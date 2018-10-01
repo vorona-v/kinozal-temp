@@ -1,7 +1,11 @@
 
-/* bootstrap vertical carousel */
+.left-sidebar {
+  margin-top: 40px;
+}
+
 .vertical-slider {
   overflow: hidden;
+
   border-radius: 4px;
 
   img {
@@ -9,29 +13,46 @@
   }
 }
 
-
-/* site news */
 .site-news-item {
+  position: relative;
+
+  clear: both;
+
   &:not(:last-child) {
+    min-height: 85px;
     margin-bottom: 15px;
-    border-bottom: 1px solid $border-lighten;
+
+    &::after {
+      position: absolute;
+      right: 0;
+      bottom: -5px;
+
+      width: calc(100% - 85px);
+      height: 1px;
+
+      content: "";
+
+      background-color: $gray-color;
+    }
   }
 
   &:hover {
     .site-news-item__title a {
-      color: $base-color;
+      color: $accent-color;
     }
 
     .site-news-item__image {
-      border-color: $base-color;
-      background-color: $base-color;
+      border-color: $accent-color;
+      background-color: $accent-color;
     }
   }
 
   &__image {
     float: left;
-    margin: 0 10px 10px 0;
+
     width: 75px;
+    margin: 0 10px 10px 0;
+
     transition: background-color 0.25s ease;
 
     img {
@@ -40,19 +61,25 @@
   }
 
   &__date {
-    color: #aaaaaa;
     text-align: right;
+
+    color: darken($gray-color, 30%);
+
     font-size: 0.8em;
   }
 
   &__title {
+    margin-bottom: 10px;
+
     a {
-      color: $main-color;
       transition: color 0.25s ease;
+
+      color: $base-color;
+
+      @include block-shortener(1rem, 1.5, 50px, 2);
     }
   }
 }
-
 
 .top-films {
   .panel-body {
@@ -64,8 +91,12 @@
     margin-bottom: 0;
   }
 
+  .badge {
+    margin-top: 3px;
+  }
+
   &-item {
-    border-top: 1px solid $border-lighten;
+    border-top: 1px solid $gray-color;
     border-right: none;
     border-left: none;
     background-color: transparent;
@@ -81,14 +112,14 @@
     }
 
     &:hover {
-      background-color: $base-color;
+      background-color: $accent-color;
 
       a {
-        color: #ffffff;
+        color: lighten($gray-color, 14%);
       }
 
       .badge {
-        background-color: #333333;
+        background-color: $dark-color;
       }
     }
   }
