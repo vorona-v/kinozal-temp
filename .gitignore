@@ -1,8 +1,11 @@
 temp/
 *.bat
 gulpfile.js
+bower.json
 .gitignore
 .csscomb.*
+.bowerrc
+
 
 # IntellijIdea files
 .idea/
