@@ -25,7 +25,14 @@ h1 {
     margin: 40px 0;
 
     font-family: $font-header;
-    font-size: 3rem;
+
+    @media (min-width: 576px) {
+        font-size: 3rem;
+    }
+
+    @media (max-width: 576px) {
+        font-size: 2rem;
+    }
 
     &::after {
         position: absolute;
@@ -43,7 +50,14 @@ h2 {
     margin: 50px 0 40px 40px;
 
     font-family: $font-header;
-    font-size: 2.5rem;
+
+    @media (min-width: 576px) {
+        font-size: 2.5rem;
+    }
+
+    @media (max-width: 576px) {
+        font-size: 1.75rem;
+    }
 
     &::before {
         position: absolute;
@@ -66,6 +80,16 @@ h2 {
         content: "";
 
         border-bottom: 3px solid rgba($accent-light, 0.7);
+    }
+}
+
+h3 {
+    @media (min-width: 576px) {
+        font-size: 1.5rem;
+    }
+
+    @media (max-width: 576px) {
+        font-size: 1.25rem;
     }
 }
 

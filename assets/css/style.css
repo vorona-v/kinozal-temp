@@ -98,7 +98,6 @@ h1 {
     margin: 40px 0;
 
     font-family: "PT Serif", serif;
-    font-size: 3rem;
 }
 
 h1::after {
@@ -116,7 +115,6 @@ h2 {
     margin: 50px 0 40px 40px;
 
     font-family: "PT Serif", serif;
-    font-size: 2.5rem;
 }
 
 h2::before {
@@ -162,13 +160,10 @@ section {
 .header-logo__title {
     display: block;
 
-    letter-spacing: 0.33em;
-
     color: #df8a13;
     text-shadow: 0 0 5px black, 0 0 20px black;
 
     font-family: "PT Serif", serif;
-    font-size: 3.5rem;
     font-weight: bold;
 }
 
@@ -474,4 +469,37 @@ section {
 .footer-fifth a {
     color: #fcfcfc;
 }
-/*# sourceMappingURL=style.css.map */
+
+@media (min-width: 576px) {
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    .header-logo__title {
+        letter-spacing: 0.33em;
+
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.75rem;
+    }
+    h3 {
+        font-size: 1.25rem;
+    }
+    .header-logo__title {
+        letter-spacing: 0.2em;
+
+        font-size: 2.5rem;
+    }
+}
