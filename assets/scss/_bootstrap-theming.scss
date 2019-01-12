@@ -5,8 +5,6 @@
 
     .navbar-nav {
         > .active > a {
-            color: lighten($gray-color, 14%);
-            border-radius: 4px;
             background-color: $base-dark;
 
             &:hover,
@@ -17,24 +15,24 @@
 
         li {
             > a {
+                border-radius: 4px;
                 transition: background-color 0.5s;
 
                 &:hover,
                 &:focus {
-                    border-radius: 4px;
                     background-color: $base-color;
                 }
             }
         }
-
-        &.navbar-left li {
-            margin: 5px 5px 5px 0;
-        }
-
-        &.navbar-right li {
-            margin: 5px 0 5px 5px;
-        }
     }
+}
+
+.navbar-left li {
+    margin: 5px 5px 5px 0;
+}
+
+.navbar-right li {
+    margin: 5px 0 5px 5px;
 }
 
 .panel {
@@ -67,6 +65,7 @@
 .input-group-lg > .form-control {
     font-size: 0.875rem;
 }
+
 .input-lg {
     font-size: 0.875rem;
 }
