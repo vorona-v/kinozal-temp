@@ -15,8 +15,15 @@
 
         li {
             > a {
-                border-radius: 4px;
                 transition: background-color 0.5s;
+
+                @media (min-width: 768px) {
+                    border-radius: 4px;
+                }
+
+                @media (max-width: 767px) {
+                    text-align: center;
+                }
 
                 &:hover,
                 &:focus {
@@ -27,12 +34,25 @@
     }
 }
 
+.navbar-header {
+    text-align: center;
+}
+
+.navbar-toggle {
+    float: none;
+    margin-right: 0;
+}
+
 .navbar-left li {
-    margin: 5px 5px 5px 0;
+    @media (min-width: 768px) {
+        margin: 5px 5px 5px 0;
+    }
 }
 
 .navbar-right li {
-    margin: 5px 0 5px 5px;
+    @media (min-width: 768px) {
+        margin: 5px 0 5px 5px;
+    }
 }
 
 .panel {

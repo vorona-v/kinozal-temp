@@ -16,8 +16,6 @@
     -webkit-transition: background-color 0.5s;
          -o-transition: background-color 0.5s;
             transition: background-color 0.5s;
-
-    border-radius: 4px;
 }
 
 .navbar-inverse .navbar-nav li > a:hover,
@@ -25,12 +23,14 @@
     background-color: #165690;
 }
 
-.navbar-left li {
-    margin: 5px 5px 5px 0;
+.navbar-header {
+    text-align: center;
 }
 
-.navbar-right li {
-    margin: 5px 0 5px 5px;
+.navbar-toggle {
+    float: none;
+
+    margin-right: 0;
 }
 
 .panel {
@@ -467,6 +467,24 @@ section {
 
 .footer-fifth a {
     color: #fcfcfc;
+}
+
+@media (min-width: 768px) {
+    .navbar-inverse .navbar-nav li > a {
+        border-radius: 4px;
+    }
+    .navbar-left li {
+        margin: 5px 5px 5px 0;
+    }
+    .navbar-right li {
+        margin: 5px 0 5px 5px;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-inverse .navbar-nav li > a {
+        text-align: center;
+    }
 }
 
 @media (min-width: 576px) {
