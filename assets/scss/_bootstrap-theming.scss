@@ -44,15 +44,27 @@
     margin-right: 0;
 }
 
-.navbar-left li {
-    @media (min-width: 768px) {
-        margin: 5px 5px 5px 0;
+.navbar-left {
+    @media (max-width: 767px) {
+        margin-bottom: 0;
+    }
+
+    li {
+        @media (min-width: 768px) {
+            margin: 5px 5px 5px 0;
+        }
     }
 }
 
-.navbar-right li {
-    @media (min-width: 768px) {
-        margin: 5px 0 5px 5px;
+.navbar-right {
+    @media (max-width: 767px) {
+        margin-top: 0;
+    }
+
+    li {
+        @media (min-width: 768px) {
+            margin: 5px 0 5px 5px;
+        }
     }
 }
 

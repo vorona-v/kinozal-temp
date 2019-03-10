@@ -489,6 +489,12 @@ section {
     .navbar-inverse .navbar-nav li > a {
         text-align: center;
     }
+    .navbar-left {
+        margin-bottom: 0;
+    }
+    .navbar-right {
+        margin-top: 0;
+    }
 }
 
 @media (min-width: 576px) {
