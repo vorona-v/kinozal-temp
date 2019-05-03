@@ -1,100 +1,97 @@
 
 html {
-    overflow-y: scroll;
+  overflow-y: scroll;
 
-    font-size: 16px;
+  font-size: $font-size;
 }
 
 body {
-    font-family: $font-main;
-    font-size: 1rem;
+  font-family: $font-main;
+  font-size: 1rem;
 }
 
 a {
-    color: $base-color;
+  color: $color-main;
 
-    &:hover,
-    &:focus {
-        text-decoration: none;
+  &:hover,
+  &:focus {
+    text-decoration: none;
 
-        color: $accent-color;
-    }
+    color: $color-accent;
+  }
 }
 
 h1 {
-    margin: 40px 0;
+  margin: 40px 0;
 
-    font-family: $font-header;
+  font-family: $font-header;
 
-    @media (min-width: 576px) {
-        font-size: 3rem;
-    }
+  @include xs-min {
+    font-size: 3rem;
+  }
+  @include xs {
+    font-size: 2rem;
+  }
 
-    @media (max-width: 576px) {
-        font-size: 2rem;
-    }
+  &::after {
+    position: absolute;
 
-    &::after {
-        position: absolute;
+    width: 100%;
+    margin: 0.85em 0 0 15px;
 
-        width: 100%;
-        margin: 0.85em 0 0 15px;
+    content: "";
 
-        content: "";
-
-        border-bottom: 3px solid rgba($accent-light, 0.7);
-    }
+    border-bottom: 3px solid rgba(lighten($color-accent, 15%), 0.7);
+  }
 }
 
 h2 {
-    margin: 50px 0 40px 40px;
+  margin: 50px 0 40px 40px;
 
-    font-family: $font-header;
+  font-family: $font-header;
 
-    @media (min-width: 576px) {
-        font-size: 2.5rem;
-    }
+  @include xs-min {
+    font-size: 2.5rem;
+  }
+  @include xs {
+    font-size: 1.75rem;
+  }
 
-    @media (max-width: 576px) {
-        font-size: 1.75rem;
-    }
+  &::before {
+    position: absolute;
+    left: 0;
 
-    &::before {
-        position: absolute;
-        left: 0;
+    width: 25px;
+    margin: 0.25em 0 0 0;
 
-        width: 25px;
-        margin: 0.25em 0 0 0;
+    content: "";
 
-        content: "";
+    border-bottom: 3px solid rgba(lighten($color-accent, 15%), 0.7);
+  }
 
-        border-bottom: 3px solid rgba($accent-light, 0.9);
-    }
+  &::after {
+    position: absolute;
 
-    &::after {
-        position: absolute;
+    width: 100%;
+    margin: 0.85em 0 0 15px;
 
-        width: 100%;
-        margin: 0.85em 0 0 15px;
+    content: "";
 
-        content: "";
-
-        border-bottom: 3px solid rgba($accent-light, 0.7);
-    }
+    border-bottom: 3px solid rgba(lighten($color-accent, 15%), 0.7);
+  }
 }
 
 h3 {
-    @media (min-width: 576px) {
-        font-size: 1.5rem;
-    }
-
-    @media (max-width: 576px) {
-        font-size: 1.25rem;
-    }
+  @include xs-min {
+    font-size: 1.5rem;
+  }
+  @include xs {
+    font-size: 1.25rem;
+  }
 }
 
 section {
-    position: relative;
+  position: relative;
 
-    overflow: hidden;
+  overflow: hidden;
 }
