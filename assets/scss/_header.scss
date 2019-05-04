@@ -15,7 +15,6 @@
     color: $color-accent;
 
     font-family: $font-header;
-    font-weight: bold;
 
     @extend %text-shadow;
     @include xs-min {
@@ -41,4 +40,4 @@
 
     @extend %text-shadow;
   }
-}
+}
