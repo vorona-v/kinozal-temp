@@ -1,3 +1,8 @@
+.header-logo__title,
+.header-logo__description {
+  text-shadow: 0 0 5px black, 0 0 20px black;
+}
+
 .navbar-inverse {
   border-color: transparent;
   background-color: #191919;
@@ -163,7 +168,6 @@ section {
   display: block;
 
   color: #df8a13;
-  text-shadow: 0 0 5px black, 0 0 20px black;
 
   font-family: "PT Serif", serif;
   font-weight: bold;
@@ -174,8 +178,7 @@ section {
 
   letter-spacing: 0.2em;
 
-  color: white;
-  text-shadow: 0 0 5px black, 0 0 20px black;
+  color: #ffffff;
 
   font-size: 1.15rem;
 }

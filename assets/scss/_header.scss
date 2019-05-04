@@ -13,11 +13,11 @@
     display: block;
 
     color: $color-accent;
-    text-shadow: 0 0 5px darken($color-dark, 14%), 0 0 20px darken($color-dark, 14%);
 
     font-family: $font-header;
     font-weight: bold;
 
+    @extend %text-shadow;
     @include xs-min {
       letter-spacing: 0.33em;
 
@@ -35,9 +35,10 @@
 
     letter-spacing: 0.2em;
 
-    color: lighten($color-gray, 14%);
-    text-shadow: 0 0 5px darken($color-dark, 14%), 0 0 20px darken($color-dark, 14%);
+    color: $color-light;
 
     font-size: 1.15rem;
+
+    @extend %text-shadow;
   }
 }
