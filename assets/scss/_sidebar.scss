@@ -1,6 +1,6 @@
-
 .left-sidebar {
-  margin-top: 40px;
+  margin-top: $gap * 0.5;
+  margin-bottom: $gap * 4;
 }
 
 .vertical-slider {
@@ -20,7 +20,7 @@
 
   &:not(:last-child) {
     min-height: 85px;
-    margin-bottom: 15px;
+    margin-bottom: $gap;
 
     &::after {
       position: absolute;

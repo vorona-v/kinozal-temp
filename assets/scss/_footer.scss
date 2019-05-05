@@ -1,7 +1,5 @@
-
 .footer {
-  margin-top: 60px;
-  padding-top: 40px;
+  padding-top: $gap * 3;
 
   color: lighten($color-gray, 12%);
   background-color: $color-dark;

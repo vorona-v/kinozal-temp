@@ -1,7 +1,4 @@
-
 html {
-  overflow-y: scroll;
-
   font-size: $font-size;
 }
 
@@ -22,7 +19,7 @@ a {
 }
 
 h1 {
-  margin: 40px 0;
+  margin: 0 0 ($gap * 3);
 
   font-family: $font-header;
 
@@ -37,7 +34,7 @@ h1 {
     position: absolute;
 
     width: 100%;
-    margin: 0.85em 0 0 15px;
+    margin: 0.85em 0 0 $gap;
 
     content: "";
 
@@ -46,7 +43,7 @@ h1 {
 }
 
 h2 {
-  margin: 50px 0 40px 40px;
+  margin: ($gap * 4) 0 ($gap * 3) ($gap * 3);
 
   font-family: $font-header;
 

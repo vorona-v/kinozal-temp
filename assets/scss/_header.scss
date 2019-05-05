@@ -1,3 +1,6 @@
+.header {
+  margin-bottom: $gap * 4;
+}
 
 .header-logo {
   padding: 100px 20px;
@@ -40,4 +43,4 @@
 
     @extend %text-shadow;
   }
-}
+}
