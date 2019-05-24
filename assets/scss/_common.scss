@@ -19,7 +19,7 @@ a {
 }
 
 h1 {
-  margin: 0 0 ($gap * 3);
+  margin: (-$gap / 2) 0 ($gap * 3);
 
   font-family: $font-header;
 
@@ -91,4 +91,4 @@ section {
   position: relative;
 
   overflow: hidden;
-}
+}
