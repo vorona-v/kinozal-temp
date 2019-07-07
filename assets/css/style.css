@@ -437,7 +437,7 @@ section {
 .top-films-item a {
   display: block;
 
-  padding: 10px 15px 10px 25px;
+  padding: 10px 40px 10px 25px;
 }
 
 .top-films-item:first-child {
@@ -450,15 +450,18 @@ section {
   border-radius: 0;
 }
 
-.top-films-item:hover {
+.top-films-item:hover,
+.top-films-item:focus {
   background-color: #df8a13;
 }
 
-.top-films-item:hover a {
-  color: white;
+.top-films-item:hover a,
+.top-films-item:focus a {
+  color: #ffffff;
 }
 
-.top-films-item:hover .badge {
+.top-films-item:hover .badge,
+.top-films-item:focus .badge {
   background-color: #232323;
 }
 
