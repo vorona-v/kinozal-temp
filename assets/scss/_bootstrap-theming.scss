@@ -4,11 +4,11 @@
 
   .navbar-nav {
     > .active > a {
-      background-color: saturate(darken($color-main, 14%), 15%);
+      background-color: saturate(darken($color-primary, 14%), 15%);
 
       &:hover,
       &:focus {
-        background-color: desaturate(lighten($color-main, 15%), 40%);
+        background-color: desaturate(lighten($color-primary, 15%), 40%);
       }
     }
 
@@ -25,7 +25,7 @@
 
         &:hover,
         &:focus {
-          background-color: $color-main;
+          background-color: $color-primary;
         }
       }
     }

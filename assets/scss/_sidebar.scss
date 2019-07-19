@@ -73,7 +73,7 @@
     a {
       transition: color 0.25s ease;
 
-      color: $color-main;
+      color: $color-primary;
 
       @include block-shortener(1rem, 1.5, 50px, 2);
     }
