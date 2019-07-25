@@ -153,7 +153,7 @@ section {
 }
 
 .header-logo {
-  padding: 100px 20px;
+  padding: 100px 0;
 
   text-align: center;
 
@@ -525,7 +525,7 @@ section {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767.8px) {
   .navbar-inverse .navbar-nav > li > a {
     text-align: center;
   }
@@ -537,7 +537,7 @@ section {
   }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 575.8px) {
   h1 {
     font-size: 2rem;
   }
