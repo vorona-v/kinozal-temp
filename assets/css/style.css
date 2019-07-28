@@ -202,19 +202,14 @@ section {
 
 .new-films .thumbnail,
 .top-week .thumbnail {
-  margin-bottom: 15px;
+  margin-bottom: 0;
 }
 
 .new-films-item,
 .top-week-item {
+  margin-bottom: 15px;
   padding-right: 7.5px;
   padding-left: 7.5px;
-}
-
-.new-films-item:hover .thumbnail,
-.top-week-item:hover .thumbnail {
-  border-color: #df8a13;
-  background-color: #df8a13;
 }
 
 .new-films-item__image,
@@ -222,13 +217,18 @@ section {
   width: 100%;
 }
 
-.new-films-item__label,
-.top-week-item__label {
+.new-films-item__title,
+.top-week-item__title {
   display: block;
   overflow: hidden;
 
+  margin: 0;
+
   white-space: nowrap;
      text-overflow: ellipsis;
+
+  font-size: 1rem;
+  font-weight: bold;
 
   -o-text-overflow: ellipsis;
 }
@@ -245,8 +245,16 @@ section {
   text-align: center;
 }
 
-.new-films-item:hover .new-films-item__label,
-.top-week-item:hover .top-week-item__label {
+.new-films-item:hover .thumbnail,
+.top-week-item:hover .thumbnail {
+  border-color: #df8a13;
+  background-color: #df8a13;
+}
+
+.new-films-item:hover .new-films-item__title,
+.new-films-item:hover .top-week-item__title,
+.top-week-item:hover .new-films-item__title,
+.top-week-item:hover .top-week-item__title {
   color: white;
 }
 
