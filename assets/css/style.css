@@ -425,6 +425,11 @@ section {
   margin-bottom: 0;
 }
 
+.top-films .list-group-item {
+  margin-right: -1px;
+  margin-left: -1px;
+}
+
 .top-films .badge {
   position: absolute;
   top: 12px;
@@ -445,7 +450,7 @@ section {
 .top-films-item a {
   display: block;
 
-  padding: 10px 40px 10px 25px;
+  padding: 10px 40px 10px 15px;
 }
 
 .top-films-item:first-child {
