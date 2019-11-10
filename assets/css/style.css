@@ -327,6 +327,10 @@ section {
   margin-bottom: 60px;
 }
 
+.left-sidebar .panel:last-of-type {
+  margin-bottom: 0;
+}
+
 .vertical-slider {
   overflow: hidden;
 
@@ -407,8 +411,6 @@ section {
        -o-transition: color 0.25s ease;
           transition: color 0.25s ease;
 
-  color: #165690;
-
   font-size: 1rem;
   line-height: 1.5rem;
 
@@ -425,11 +427,6 @@ section {
   margin-bottom: 0;
 }
 
-.top-films .list-group-item {
-  margin-right: -1px;
-  margin-left: -1px;
-}
-
 .top-films .badge {
   position: absolute;
   top: 12px;
@@ -437,8 +434,8 @@ section {
 }
 
 .top-films-item {
-  position: relative;
-
+  margin-right: -1px;
+  margin-left: -1px;
   padding: 0;
 
   border-top: 1px solid #dddddd;
@@ -463,18 +460,15 @@ section {
   border-radius: 0;
 }
 
-.top-films-item:hover,
-.top-films-item:focus {
+.top-films-item:hover {
   background-color: #df8a13;
 }
 
-.top-films-item:hover a,
-.top-films-item:focus a {
+.top-films-item:hover a {
   color: #ffffff;
 }
 
-.top-films-item:hover .badge,
-.top-films-item:focus .badge {
+.top-films-item:hover .badge {
   background-color: #232323;
 }
 

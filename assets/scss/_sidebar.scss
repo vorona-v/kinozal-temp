@@ -1,5 +1,9 @@
 .left-sidebar {
   margin-bottom: $gap * 4;
+
+  .panel:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .vertical-slider {
@@ -74,8 +78,6 @@
       a {
         transition: color 0.25s ease;
 
-        color: $color-primary;
-
         @include block-shortener(1rem, 1.5, 50px, 2);
       }
     }
@@ -90,11 +92,6 @@
 
   .list-group {
     margin-bottom: 0;
-
-    &-item {
-      margin-right: -1px;
-      margin-left: -1px;
-    }
   }
 
   .badge {
@@ -104,8 +101,8 @@
   }
 
   &-item {
-    position: relative;
-
+    margin-right: -1px;
+    margin-left: -1px;
     padding: 0;
 
     border-top: 1px solid $color-gray;
@@ -129,8 +126,7 @@
       border-radius: 0;
     }
 
-    &:hover,
-    &:focus {
+    &:hover {
       background-color: $color-accent;
 
       a {
@@ -142,4 +138,4 @@
       }
     }
   }
-}
+}
