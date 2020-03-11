@@ -19,8 +19,8 @@
 
 .navbar-inverse .navbar-nav > li > a {
   -webkit-transition: background-color 0.5s;
-       -o-transition: background-color 0.5s;
-          transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover,
@@ -225,7 +225,7 @@ section {
   margin: 0;
 
   white-space: nowrap;
-     text-overflow: ellipsis;
+  text-overflow: ellipsis;
 
   font-size: 1rem;
   font-weight: bold;
@@ -236,8 +236,8 @@ section {
 .new-films-item .thumbnail,
 .top-week-item .thumbnail {
   -webkit-transition: background-color 0.25s ease;
-       -o-transition: background-color 0.25s ease;
-          transition: background-color 0.25s ease;
+  -o-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
 }
 
 .new-films-item .caption,
@@ -280,16 +280,16 @@ section {
 
 .film-news h3 > a {
   -webkit-transition: color 0.25s ease;
-       -o-transition: color 0.25s ease;
-          transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease;
 }
 
 .film-news .thumbnail {
   margin-bottom: 0;
 
   -webkit-transition: background-color 0.25s ease;
-       -o-transition: background-color 0.25s ease;
-          transition: background-color 0.25s ease;
+  -o-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
 }
 
 .film-news .btn-warning {
@@ -298,8 +298,8 @@ section {
   margin-bottom: 30px;
 
   -webkit-transition: background-color 0.25s ease;
-       -o-transition: background-color 0.25s ease;
-          transition: background-color 0.25s ease;
+  -o-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
 }
 
 .film-info {
@@ -381,8 +381,8 @@ section {
   margin: 0 10px 10px 0;
 
   -webkit-transition: background-color 0.25s ease;
-       -o-transition: background-color 0.25s ease;
-          transition: background-color 0.25s ease;
+  -o-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
 }
 
 .site-news-item__image img {
@@ -404,17 +404,17 @@ section {
 .site-news-item__title a {
   display: -webkit-box;
   overflow: hidden;
+  -webkit-box-orient: vertical;
 
   height: 50px;
 
   -webkit-transition: color 0.25s ease;
-       -o-transition: color 0.25s ease;
-          transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease;
 
   font-size: 1rem;
   line-height: 1.5rem;
 
-  -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
 }
 
@@ -429,8 +429,12 @@ section {
 
 .top-films .badge {
   position: absolute;
-  top: 12px;
+  top: 50%;
   right: 10px;
+
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .top-films-item {
