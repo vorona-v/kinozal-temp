@@ -1,12 +1,16 @@
 .film-info {
   font-size: 1.2em;
 
+  &__wrapper {
+    white-space: nowrap;
+
+    &:not(:last-of-type) {
+      margin-right: $gap;
+    }
+  }
+
   &__badge {
     font-size: 0.8em;
-
-    &:not(:last-child) {
-      margin-right: 3%;
-    }
   }
 
   &__well {
@@ -17,7 +21,7 @@
 
 
 .film-send-comment {
-  .btn {
+  &__button {
     float: right;
   }
-}
+}

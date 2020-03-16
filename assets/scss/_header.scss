@@ -1,5 +1,5 @@
 .header {
-  margin-bottom: $gap * 4;
+  @extend %margin-bottom-lg;
 }
 
 .header-logo {
@@ -43,4 +43,4 @@
 
     @extend %text-shadow;
   }
-}
+}
