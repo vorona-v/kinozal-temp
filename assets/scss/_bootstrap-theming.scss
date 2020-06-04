@@ -45,27 +45,27 @@
 }
 
 .navbar-left {
-  @include sm {
-    margin-bottom: 0;
-  }
-
-  li {
-    @include sm-min {
+  @include sm-min {
+    li {
       margin: 5px 5px 5px 0;
     }
-  }
+  };
+
+  @include sm {
+    margin-bottom: 0;
+  };
 }
 
 .navbar-right {
-  @include sm {
-    margin-top: 0;
-  }
-
-  li {
-    @include sm-min {
+  @include sm-min {
+    li {
       margin: 5px 0 5px 5px;
     }
-  }
+  };
+
+  @include sm {
+    margin-top: 0;
+  };
 }
 
 .panel {
