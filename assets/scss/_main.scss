@@ -2,7 +2,7 @@
   @extend %margin-bottom-lg;
 
   .site-search {
-    margin: -$gap 0 ($gap * 3);
+    margin-bottom: $gap * 3;
   }
 
   .user-login {
