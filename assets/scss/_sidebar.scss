@@ -16,6 +16,30 @@
   }
 }
 
+.user-login {
+  position: relative;
+
+  &__tabs {
+    position: absolute;
+    top: 0;
+    right: $gap / 3 * 2;
+
+    border: none;
+
+    a {
+      padding: 14px 5px 12px !important;
+
+      color: $color-gray;
+      border: none !important;
+      background-color: transparent !important;
+    }
+
+    .active a {
+      color: $color-light !important;
+    }
+  }
+}
+
 .site-news {
   &-item {
     position: relative;
@@ -57,8 +81,6 @@
       width: 75px;
       margin: 0 10px 10px 0;
 
-      transition: background-color 0.25s;
-
       img {
         width: 100%;
       }
@@ -85,31 +107,24 @@
 }
 
 .top-films {
-  &-body {
+  &__body {
     padding-right: 0;
     padding-left: 0;
   }
 
-  &-list {
+  &__list {
     margin-bottom: 0;
   }
 
-  &-item {
+  &__item {
     margin-right: -1px;
     margin-left: -1px;
-    padding: 0;
+    padding-right: 55px;
 
-    border-top: 1px solid $color-gray;
-    border-right: none;
-    border-bottom: none;
-    border-left: none;
+    transition: none;
+
+    color: $color-primary !important;
     background-color: transparent;
-
-    a {
-      display: block;
-
-      padding: 10px 50px 10px $gap;
-    }
 
     &:first-child {
       border-top: none;
@@ -117,15 +132,15 @@
     }
 
     &:last-child {
+      border-bottom: none;
       border-radius: 0;
     }
 
-    &:hover {
-      background-color: $color-accent;
-
-      a {
-        color: $color-light;
-      }
+    &:hover,
+    &:focus {
+      color: $color-light !important;
+      border-color: $color-accent;
+      background-color: $color-accent !important;
 
       .badge {
         background-color: $color-dark;
@@ -133,10 +148,10 @@
     }
   }
 
-  &-badge {
+  &__badge {
     position: absolute;
     top: 50%;
-    right: 10px;
+    right: $gap;
 
     transform: translateY(-50%);
   }

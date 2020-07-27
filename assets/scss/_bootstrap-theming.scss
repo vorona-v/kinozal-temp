@@ -6,7 +6,7 @@
 
   .navbar-nav {
     > .active > a {
-      background-color: saturate(darken($color-primary, 14%), 15%);
+      background-color: $color-primary-dark;
 
       &:hover,
       &:focus {
@@ -49,10 +49,10 @@
     li {
       margin: 5px 5px 5px 0;
     }
-  };
+  }
   @include sm {
     margin-bottom: 0;
-  };
+  }
 }
 
 .navbar-right {
@@ -60,30 +60,28 @@
     li {
       margin: 5px 0 5px 5px;
     }
-  };
+  }
   @include sm {
     margin-top: 0;
-  };
+  }
 }
 
 .panel {
   margin-bottom: $gap * 2;
 
   border: none;
-  background-color: lighten($color-gray, 8%);
+  background-color: darken($color-light, 8%);
 
   &-info {
-    > .panel-heading {
+    .panel-heading {
+      letter-spacing: 0.1em;
+
       color: $color-light;
       border: none;
       background-color: $color-accent;
+
+      font-size: 1.2rem;
     }
-  }
-
-  &-title {
-    letter-spacing: 0.1em;
-
-    font-size: 1.2rem;
   }
 
   &-body {
@@ -108,4 +106,8 @@
   border: 1px solid $color-gray;
   border-bottom: none;
   border-radius: 4px 4px 0 0;
+}
+
+.thumbnail {
+  transition: background-color 0.25s;
 }
