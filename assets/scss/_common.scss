@@ -19,14 +19,16 @@ a {
 }
 
 h1 {
-  margin: (-$gap / 2) 0 ($gap * 3);
-
   font-family: $font-header;
 
   @include xs-min {
+    margin: (-$gap / 2) 0 ($gap * 3);
+
     font-size: 3rem;
   }
   @include xs {
+    margin: 0 0 ($gap * 2);
+
     font-size: 2rem;
   }
 
@@ -43,14 +45,16 @@ h1 {
 }
 
 h2 {
-  margin: ($gap * 4) 0 ($gap * 3) ($gap * 3);
-
   font-family: $font-header;
 
   @include xs-min {
+    margin: ($gap * 4) 0 ($gap * 3) ($gap * 3);
+
     font-size: 2.5rem;
   }
   @include xs {
+    margin: ($gap * 3) 0 ($gap * 2) ($gap * 3);
+
     font-size: 1.75rem;
   }
 
