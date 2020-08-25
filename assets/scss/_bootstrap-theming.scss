@@ -10,7 +10,7 @@
 
       &:hover,
       &:focus {
-        background-color: desaturate(lighten($color-primary, 15%), 40%);
+        background-color: $color-primary-light;
       }
     }
 
