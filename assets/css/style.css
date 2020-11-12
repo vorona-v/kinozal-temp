@@ -334,7 +334,7 @@ section {
   border-radius: 4px;
 }
 
-.vertical-slider img {
+.vertical-slider__image {
   width: 100%;
 }
 
@@ -351,7 +351,7 @@ section {
 }
 
 .user-login__tabs a {
-  padding: 14px 5px 12px !important;
+  padding: 14px 5px 11px !important;
 
   color: #dddddd;
   border: none !important;
@@ -386,7 +386,7 @@ section {
   background-color: #dddddd;
 }
 
-.site-news-item:hover .site-news-item__title a {
+.site-news-item:hover a {
   color: #df8a13;
 }
 
@@ -400,10 +400,6 @@ section {
 
   width: 75px;
   margin: 0 10px 10px 0;
-}
-
-.site-news-item__image img {
-  width: 100%;
 }
 
 .site-news-item__date {
